@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="ios-timer-4.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="timer.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+</head>
+
+<body>
+    <div class="fundo">
+        <div class="circle">
+            <div id="counter" class="contador minutos">01</div>
+            <span class="contador">:</span>
+            <div  class="contador segundos">00</div>
+        </div>
+        <div class="corpo">
+            <div class="cancel1">
+                <div id="cancel" class="cancel" onclick="cancelcount()">Cancel</div>
+            </div>
+            <div class="iniciar">
+                <div id="start" class="start" onclick="pausecount()">Pause</div>
+                <div class="parar" onclick="stopcount()"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="timer.js"></script>
+
+</html>
